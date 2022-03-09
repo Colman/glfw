@@ -20,15 +20,15 @@ project "GLFW"
 	}
 
 	filter "system:windows"
-    buildoptions { "-std=c11", "-lgdi32" }
+    		buildoptions { "-std=c11", "-lgdi32" }
 		systemversion "latest"
-    staticruntime "On"
+    		staticruntime "On"
     
 		files
 		{
 			"src/win32_init.c",
 			"src/win32_joystick.c",
-      "src/win32_monitor.c",
+      			"src/win32_monitor.c",
 			"src/win32_time.c",
 			"src/win32_thread.c",
 			"src/win32_window.c",
